@@ -1,0 +1,121 @@
+.note {
+	width: 10px;
+	height: 10px;
+	background-color: cyan;
+	border: solid 1px black;
+	float: left;
+}
+#container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#icons {
+	position: absolute;
+	z-index: 9999;
+	left: 1px;
+	bottom: 0px;
+}
+#icons i {
+	font-size: 48px;
+	text-align: center;
+	padding: 10px;
+	border: solid 1px black;
+	cursor: pointer;
+	background-color: white;
+}
+body {
+	width: 100%;
+	height: 100%;
+	/*background-image: url("../img/grid.svg");*/
+	background-repeat: repeat;
+	
+
+}
+
+map,area {
+	cursor: pointer;
+	z-index: 10000;
+	position: absolute;
+}
+.shape {
+	width: 512px;
+	height: 512px;
+	opacity: 0.9;
+	animation: wiggle 1s linear 0s infinite alternate;
+	-webkit-animation: wiggle 1s linear 0s infinite alternate;
+	-moz-animation: wiggle 1s linear 0s infinite alternate;
+	-o-animation: wiggle 1s linear 0s infinite alternate;
+	-ms-animation: wiggle 1s linear 0s infinite alternate;
+}
+.shape.active {
+	opacity: 1;
+}
+.shape.rotated {
+	transform: rotate(90deg);
+	animation: rotwiggle 1s linear 0s infinite alternate;
+	-webkit-animation: rotwiggle 1s linear 0s infinite alternate;
+	-moz-animation: rotwiggle 1s linear 0s infinite alternate;
+	-o-animation: rotwiggle 1s linear 0s infinite alternate;
+	-ms-animation: rotwiggle 1s linear 0s infinite alternate;
+}
+
+
+
+@keyframes wiggle {
+	from {transform: rotate(-1deg)} to {transform: rotate(1deg);}
+} 
+@-webkit-keyframes wiggle {
+	from {transform: rotate(-1deg)} to {transform: rotate(1deg);}
+} 
+@-moz-keyframes wiggle {
+	from {transform: rotate(-1deg)} to {transform: rotate(1deg);}
+} 
+@-o-keyframes wiggle {
+	from {transform: rotate(-1deg)} to {transform: rotate(1deg);}
+} 
+@-ms-keyframes wiggle {
+	from {transform: rotate(-1deg)} to {transform: rotate(1deg);}
+} 
+
+@keyframes rotwiggle {
+	from {transform: rotate(91deg)} to {transform: rotate(89deg);}
+} 
+@-webkit-keyframes rotwiggle {
+	from {transform: rotate(91deg)} to {transform: rotate(89deg);}
+} 
+@-moz-keyframes rotwiggle {
+	from {transform: rotate(91deg)} to {transform: rotate(89deg);}
+} 
+@-o-keyframes rotwiggle {
+	from {transform: rotate(91deg)} to {transform: rotate(89deg);}
+} 
+@-ms-keyframes rotwiggle {
+	from {transform: rotate(91deg)} to {transform: rotate(89deg);}
+} 
+#shape-0 {
+	position: absolute;
+	top: 8;
+	left: 8;
+}
+
+#shape-1 {
+	position: absolute;
+	 left: 377px; 
+	 top: -20px;
+}
+
+#shape-2 {
+	position: absolute;
+	left: 396px;
+	top: 247px;
+}
+
+#cursor {
+	position: absolute;
+	bottom: 150px;
+	border-left: solid 1px green;
+	left: 0px;
+	height: 100%;
+	z-index: 9999;
+}

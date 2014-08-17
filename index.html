@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="css/style.css"></style>
+ <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+ <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+	
+ <script src="./js/MIDI/AudioDetect.js" type="text/javascript"></script>
+ <script src="./js/MIDI/LoadPlugin.js" type="text/javascript"></script>
+ <script src="./js/MIDI/Plugin.js" type="text/javascript"></script>
+ <script src="./js/MIDI/Player.js" type="text/javascript"></script>
+ <script src="./js/Window/DOMLoader.XMLHttp.js" type="text/javascript"></script>
+ <!-- extras -->
+ <script src="./inc/Base64.js" type="text/javascript"></script>
+ <script src="./inc/base64binary.js" type="text/javascript"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/main.js"></script>
+</head>
+<body>
+	<div id="testdiv">
+
+	</div>
+	<div id="icons">
+		<i id="stopButton" class="fa fa-stop"></i><i id="playButton" class="fa fa-play"></i><i id="rotateButton" class ="fa fa-rotate-right"></i>
+	</div>
+	<div id="container">
+	<div class="shape" id="shape-0">
+		<img id="img0" usemap="#map0"  src="img/0.png" /> 
+		<map data-img="img0" id="map0" name="map0">
+		<area shape="poly" coords="214,76,382,190,463,341,437,427,275,396,105,279,51,182" />
+	</map>
+	</div>
+	<div class="shape" id="shape-1">
+		<img id="img1" usemap="#map1" src="img/1.png" />
+		<map data-img="img1" id="map1" name="map1">
+			<area shape="poly" coords="204,155,372,193,381,243,350,288,135,348" />
+		</map>
+	</div>
+	<div class="shape" id="shape-2">
+	
+		<img  id="img2" usemap="#map2"  src="img/2.png" />
+		
+		<map data-img="img2" id="map2" name="map2">
+			<area shape="poly" coords="204,65,266,93,353,317,337,390,161,438,154,132" />
+		</map>
+	</div>
+	<div id="cursor"></div>
+</div>
+
+	
+	
+
+
+
+
+</body>
+
